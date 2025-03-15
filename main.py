@@ -5,7 +5,14 @@
 monthly_spending = [2689.56, 2770.38, 2394.04, 2099.91, 3182.20, 3267.12, 1746.83, 2545.72, 3328.20, 3147.30, 2462.61, 3890.45]
 ```  
 Напишите программу, которая с помощью цикла `for` вычисляет средние расходы Джона за первый семестр (январь–июнь) и второй семестр (июль–декабрь).  
+def money():
+    for i in monthly_spending:
+        first_sem = sum(monthly_spending[:6])/len(monthly_spending[:6])
+        last_sem = sum(monthly_spending[6:])/len(monthly_spending[6:])
+        print(first_sem)
+        print(last_sem)
 
+print(money())
 ---
 
 ### Задача 2: Кто тратил больше?  
@@ -15,7 +22,13 @@ john_monthly_spending = [2689.56, 2770.38, 2394.04, 2099.91, 3182.20, 3267.12, 1
 sam_monthly_spending = [1969.62, 3939.37, 2241.59, 3968.27, 3068.80, 1755.02, 3885.66, 2491.67, 3828.49, 3171.32, 2771.32, 3380.37]
 ```  
 Напишите программу, которая сравнивает расходы Джона и Сэма по месяцам и подсчитывает количество месяцев, в которых Джон тратил больше.  
+john_money = 0
 
+for index, j in enumerate(john_monthly_spending):
+    if j > sam_monthly_spending[index]:
+        john_money += 1
+
+print(john_money)
 ---
 
 ### Задача 3: Список друзей  
@@ -25,12 +38,21 @@ paul_friends = ["Mary", "Tim", "Mike", "Henry"]
 tina_friends = ["Tim", "Susan", "Mary", "Josh"]
 ```  
 Объедините оба списка в один, исключив дублирующиеся имена.  
-
+special_ppaul_friends = list(set(paul_friends) - set(tina_friends))
+both_special_friends = tina_friends + special_ppaul_friends
+print(both_special_friends)
 ---
 
 ### Задача 4: Общие друзья  
 Используя те же списки друзей Пола и Тины, напишите программу, которая с помощью цикла находит их общих друзей.  
+paul_friends = ["Mary", "Tim", "Mike", "Henry"]  
+tina_friends = ["Tim", "Susan", "Mary", "Josh"]
 
+both_friends=[]
+for i in paul_friends:
+    if i in tina_friends:
+        both_friends.append(i)
+print(both_friends)
 ---
 
 ### Задача 5: Игроки в баскетбол  
