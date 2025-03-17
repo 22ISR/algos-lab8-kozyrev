@@ -139,6 +139,13 @@ number_list = [5, 8, 2, 7, 3, 5, 6, 9, 2, 4, 8, 7, 1, 5, 3]
 ```  
 Создайте новый список, содержащий только числа, которые встречаются в оригинальном списке не менее трёх раз.  
 
+number_list = [5, 8, 2, 7, 3, 5, 6, 9, 2, 4, 8, 7, 1, 5, 3]
+nw_list = set(number_list)
+answer_list = []
+for number in number_list:
+    if number_list.count(number) >= 3:
+        answer_list.append(number)
+print(answer_list)
 ---
 
 ### Задача 11: Второй лучший результат  
