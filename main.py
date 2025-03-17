@@ -115,6 +115,21 @@ word_list = ["apple", "airplane", "carrot", "elephant", "guitar", "moonlight"]
 ```  
 Напишите программу, которая определяет самое длинное и самое короткое слово в списке.  
 
+word_list = ["apple", "airplane", "carrot", "elephant", "guitar", "moonlight"]
+
+def cnt():
+    l_countt = word_list
+    for words in word_list:
+        if len(words) < len(l_countt):
+            l_countt = words
+            print(l_countt)
+    s_countt = word_list
+    for words in word_list:
+        if len(words) > len(s_countt):
+            s_countt = words
+            print(s_countt)
+
+print(cnt())
 ---
 
 ### Задача 10: Фильтрация по частоте  
