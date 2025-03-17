@@ -64,6 +64,12 @@ basketball_players = {"Eve", "Richard", "Jessica", "Sam", "Michael"}
 ```  
 Напишите программу, которая определяет игроков, зарегистрированных только в баскетболе (не в футболе и не в волейболе).  
 
+# football_players = {"Eve", "Tom", "Richard", "Peter"}  
+# volleyball_players = {"Jack", "Hugh", "Peter", "Sam"}  
+# basketball_players = {"Eve", "Richard", "Jessica", "Sam", "Michael"}
+
+# only_bascketball_players = list(set(basketball_players) - set(volleyball_players) - set(football_players))
+# print(only_bascketball_players)
 ---
 
 ### Задача 6: Подсчёт голосов  
@@ -91,6 +97,15 @@ numbers = [10, 3, 5, 9, 18, 3, 0, 7]
 ```  
 Напишите функцию, которая возвращает максимальное значение, сумму и среднее арифметическое чисел в списке.  
 
+# numbers = [10, 3, 5, 9, 18, 3, 0, 7]
+# def math():
+#     srednee = sum(numbers)/len(numbers)
+#     total = sum(numbers)
+#     maxm = max(numbers)
+#     answer = srednee, total, maxm
+#     return answer
+  
+# print(math())
 ---
 
 ### Задача 9: Длинные и короткие слова  
@@ -120,3 +135,10 @@ exam_results = [23, 78, 96, 32, 53, 67, 23, 98, 33, 38, 45, 39, 86, 12, 43, 45]
 
 --- 
 """
+# exam_results = [23, 78, 96, 32, 53, 67, 23, 98, 33, 38, 45, 39, 86, 12, 43, 45]
+# def math():
+#     maxm = max(exam_results)
+#     exam_results.remove(maxm)
+#     maxm_2 = max(exam_results)
+#     return maxm_2
+# print(math())
