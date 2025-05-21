@@ -88,6 +88,17 @@ scores = [('Mike', 10), ('Mike', 8), ('Mike', 6), ('John', 7), ('John', 8), ('Jo
 ```  
 Создайте словарь, где ключами будут имена игроков, а значениями — их суммарные очки.  
 
+scores = [('Mike', 10), ('Mike', 8), ('Mike', 6), ('John', 7), ('John', 8), ('John', 5), ('Tom', 8), ('Tom', 9), ('Tom', 8)]
+dict = {}
+    
+for i, j in scores:
+    if i not in dict:
+        dict[i] = j
+    else:
+        dict[i] += j
+
+print(dict)
+
 ---
 
 ### Задача 8: Статистика списка  
